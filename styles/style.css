@@ -1,0 +1,215 @@
+.quicksand-font {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.display {
+  display: flex;
+}
+/* Header Section */
+header {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/* Navigation Styles */
+.nav {
+  max-width: 1160px;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.nav i {
+  display: none;
+}
+
+.logo {
+  justify-content: center;
+  align-items: center;
+}
+.logo h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.nav-list {
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+}
+.nav-items {
+  list-style: none;
+  font-size: 20px;
+}
+.nav-list li a {
+  text-decoration: none;
+}
+.nav-items-1 {
+  color: orange;
+  font-weight: bold;
+}
+.nav-items-2 {
+  color: skyblue;
+  font-weight: 500;
+}
+.nav-items-3 {
+  color: #05d4df;
+  font-weight: 500;
+}
+.nav-items-4 {
+  color: #5d58ef;
+  font-weight: 500;
+}
+
+.btn-primary {
+  width: 197px;
+  height: 50px;
+  background-color: orange;
+  border: none;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  margin-top: 6px;
+}
+/* Banner Secrion */
+.banner {
+  max-width: 1160px;
+  margin: 0 auto;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.banner-content {
+  max-width: 640px;
+}
+.banner-content h1 {
+  font-size: 56px;
+  line-height: 56px;
+  padding-bottom: 24px;
+}
+.banner-content p {
+  font-size: 20px;
+  padding-bottom: 24px;
+}
+#span1 {
+  color: orange;
+}
+#span2 {
+  color: skyblue;
+}
+.banner .btn-primary {
+  background-color: black;
+}
+
+/* Main Starts */
+.main {
+  background-image: url("../assets/bg.png");
+}
+.main-title {
+  font-size: 46px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.card-container {
+  max-width: 1160px;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #202020;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.card-description {
+  font-size: 16px;
+  font-weight: 500;
+  color: #808080;
+  padding-bottom: 30px;
+}
+.card-link {
+  text-decoration: none;
+  color: #64c8ff;
+  font-weight: bold;
+}
+.card-1,
+.card-2,
+.card-3 {
+  border: 2px solid tomato;
+  max-width: 367px;
+  height: 476px;
+  text-align: center;
+  border-radius: 20px;
+  padding-inline: 40px;
+}
+.card-1 {
+  background: linear-gradient(to top, #ffffff, #def5ff);
+}
+.card-2 {
+  background: linear-gradient(to top, #ffffff, #fff4dc);
+}
+.card-3 {
+  background: linear-gradient(to top, #ffffff, #eee1ff);
+}
+.card-container img {
+  padding-top: 50px;
+}
+
+.circle-arrow {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.icon-color {
+  color: orange;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 576px) {
+  .nav-list,
+  .btn-primary {
+    display: none;
+  }
+  .logo h1 {
+    display: none;
+  }
+  .nav,
+  .nav i {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+  }
+  .banner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 30px;
+    border-top: 2px solid orange;
+  }
+  .banner-img {
+    order: -1;
+  }
+  .banner .btn-primary {
+    display: inline;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+    margin-left: 30px;
+    gap: 30px;
+  }
+}
